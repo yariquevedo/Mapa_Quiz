@@ -1,0 +1,5 @@
+/* Estilos básicos para el mapa */
+#map {
+    height: 50vh; /* El mapa ocupa el 50% del alto de la pantalla */
+    width: 100%;  /* El mapa ocupa todo el ancho de la pantalla */
+}

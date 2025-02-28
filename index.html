@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa con OpenStreetMap</title>
+    <!-- Inlcuir la librería de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <style>
+        /* Estilo para el mapa */
+        #map {
+            height: 60vh;
+            width: 100%;
+        }
+
+        /* Contenedor de los botones */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        /* Estilo para los botones */
+        .button-container button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor del mapa -->
+    <div id="map"></div>
+
+    <!-- Contenedor de botones debajo del mapa -->
+    <div class="button-container">
+        <button id="btn-arboles">Árboles</button>
+        <button id="btn-distancia">Distancia</button>
+        <button id="btn-homicidios">Homicidios</button>
+    </div>
+
+    <!-- Incluir el archivo JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
